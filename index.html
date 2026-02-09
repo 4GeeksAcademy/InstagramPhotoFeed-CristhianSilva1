@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed Instagram</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <style>
-        .nav-pill .nav-link{
+        .nav-pill .nav-link {
             color: grey;
         }
-        .nav-pill .nav-link.active{
+
+        .nav-pill .nav-link.active {
             color: blue;
         }
     </style>
@@ -25,11 +31,13 @@
                     <h1 class="d-inline-block align-middle fs-4">Instagram</h1>
                 </div>
                 <div class="d-flex align-right justify-content-end">
-                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         New Post
                     </button>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-regular fa-user"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
@@ -56,10 +64,13 @@
                 </div>
                 <div class="modal-body">
                     <h2>Caption:</h2>
-                    <textarea class="form-control" placeholder="Add the caption of your post" id="floatingTextarea2"></textarea>
+                    <textarea class="form-control" placeholder="Add the caption of your post"
+                        id="floatingTextarea2"></textarea>
                     <div class="row p-2">
-                        <button class="col-1 border rounded p-1 m-1 btn-light"><i class="fa-solid fa-camera"></i></button>
-                        <button class="col-1 border rounded p-1 m-1 btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light"><i
+                                class="fa-solid fa-camera"></i></button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light"><i
+                                class="fa-solid fa-location-dot"></i></button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -73,86 +84,119 @@
     <div class="container-fluid p-2 d-flex justify-content-center">
         <ul class="nav nav-pill" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i>
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-table-list"></i>
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-table-list"></i></a>
+            </li>
         </ul>
     </div>
-
-    <div class="tab-content" id="TabContent">
-        <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-label="home-tab"></div>
-        <div class="row">
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/f0/55/a0/f055a097737aff6d68f695694cd4549b.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/53/8e/18/538e18e5683466052bb5d2e6a86d633d.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/3b/8f/82/3b8f8232822ff7d5be0479ded92c2840.jpg" class="img-fluid w-100" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/d6/7b/5f/d67b5f93e22107de75268ded53a4155c.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/9e/40/dd/9e40dd616b91f3b1e9058901b9d50366.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/58/f0/dd/58f0dd173315d481eeb71e5bfe6b51d7.jpg" class="img-fluid w-100" alt="">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/56/c9/31/56c93130f87d1437d4ca796589020b72.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/2b/71/25/2b7125f83473f65749db2d0a6ded0c23.jpg" class="img-fluid w-100" alt="">
-            </div>
-            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/1200x/f3/51/ac/f351ac0fbe525b4470942ddc49118ff6.jpg" class="img-fluid w-100" alt="">
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="row my-4">
-            <div class="col-6 mx-auto border rounded p-0">
-                <div class="d-flex p-2">
-                    <div class="w-100 fs-4">Monster</div>
-                    <small class="align-bottom">04/25</small>
-                </div>
-                <img style="object-fit: cover;" src="https://i.pinimg.com/736x/f0/55/a0/f055a097737aff6d68f695694cd4549b.jpg" class="img-fluid w-100 col-12" alt=""/>
-                <div class="p-2">
-                    <strong>500.000 Likes</strong>
-                    <p>Cristiano Ronaldo 2007/2008</p>
-                </div>
-            </div>
-        </div>
-        <div class="row my-4">
-            <div class="col-6 mx-auto border rounded p-0">
-                <div class="d-flex p-2">
-                    <div class="w-100 fs-4">The Gladiator</div>
-                    <small class="align-bottom">08/25</small>
-                </div>
-                <img style="object-fit: cover;" src="https://i.pinimg.com/736x/58/f0/dd/58f0dd173315d481eeb71e5bfe6b51d7.jpg" class="img-fluid w-100 col-12" alt=""/>
-                <div class="p-2">
-                    <strong>300.000 Likes</strong>
-                    <p>The big striker of Venezuela!</p>
-                </div>
-            </div>            
-        </div>
-
-        <div class="row my-4">
-            <div class="col-6 mx-auto border rounded p-0">
-                <div class="d-flex p-2">
-                    <div class="w-100 fs-4">Bernabeu</div>
-                    <small class="align-bottom">12/25</small>
-                </div>
-                <img style="object-fit: cover;" src="https://i.pinimg.com/736x/2b/71/25/2b7125f83473f65749db2d0a6ded0c23.jpg" class="img-fluid w-100 col-12" alt=""/>
-                <div class="p-2">
-                    <strong>1.300.000 Likes</strong>
-                    <p>Luka Modric in his prime</p>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
     
 
+    <div class="tab-content" id="TabContent">
+        <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-label="home-tab">
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/f0/55/a0/f055a097737aff6d68f695694cd4549b.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/53/8e/18/538e18e5683466052bb5d2e6a86d633d.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/3b/8f/82/3b8f8232822ff7d5be0479ded92c2840.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/d6/7b/5f/d67b5f93e22107de75268ded53a4155c.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/9e/40/dd/9e40dd616b91f3b1e9058901b9d50366.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/58/f0/dd/58f0dd173315d481eeb71e5bfe6b51d7.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/56/c9/31/56c93130f87d1437d4ca796589020b72.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/2b/71/25/2b7125f83473f65749db2d0a6ded0c23.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/1200x/f3/51/ac/f351ac0fbe525b4470942ddc49118ff6.jpg"
+                        class="img-fluid w-100" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-4">Monster</div>
+                        <small class="align-bottom">04/25</small>
+                    </div>
+                    <img style="object-fit: cover;"
+                        src="https://i.pinimg.com/736x/f0/55/a0/f055a097737aff6d68f695694cd4549b.jpg"
+                        class="img-fluid w-100 col-12" alt="" />
+                    <div class="p-2">
+                        <strong>500.000 Likes</strong>
+                        <p>Cristiano Ronaldo 2007/2008</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-4">The Gladiator</div>
+                        <small class="align-bottom">08/25</small>
+                    </div>
+                    <img style="object-fit: cover;"
+                        src="https://i.pinimg.com/736x/58/f0/dd/58f0dd173315d481eeb71e5bfe6b51d7.jpg"
+                        class="img-fluid w-100 col-12" alt="" />
+                    <div class="p-2">
+                        <strong>300.000 Likes</strong>
+                        <p>The big striker of Venezuela!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-4">Bernabeu</div>
+                        <small class="align-bottom">12/25</small>
+                    </div>
+                    <img style="object-fit: cover;"
+                        src="https://i.pinimg.com/736x/2b/71/25/2b7125f83473f65749db2d0a6ded0c23.jpg"
+                        class="img-fluid w-100 col-12" alt="" />
+                    <div class="p-2">
+                        <strong>1.300.000 Likes</strong>
+                        <p>Luka Modric in his prime</p>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+                        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+                        crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
